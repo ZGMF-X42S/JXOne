@@ -21,6 +21,8 @@
 		9664B3621CAA742D008F7E6F /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3611CAA742D008F7E6F /* HomeView.m */; };
 		9664B3651CAA76E0008F7E6F /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3641CAA76E0008F7E6F /* CustomImageView.m */; };
 		9664B3681CAA780E008F7E6F /* CircularLoaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3671CAA780E008F7E6F /* CircularLoaderView.m */; };
+		9664B36C1CAAC354008F7E6F /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B36B1CAAC354008F7E6F /* UIView+Extension.m */; };
+		9664B36F1CAADA7D008F7E6F /* BaseFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B36E1CAADA7D008F7E6F /* BaseFunction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,10 @@
 		9664B3641CAA76E0008F7E6F /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 		9664B3661CAA780E008F7E6F /* CircularLoaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLoaderView.h; sourceTree = "<group>"; };
 		9664B3671CAA780E008F7E6F /* CircularLoaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLoaderView.m; sourceTree = "<group>"; };
+		9664B36A1CAAC354008F7E6F /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9664B36B1CAAC354008F7E6F /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		9664B36D1CAADA7D008F7E6F /* BaseFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFunction.h; sourceTree = "<group>"; };
+		9664B36E1CAADA7D008F7E6F /* BaseFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFunction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 				9664B3351CAA4119008F7E6F /* ViewController.m */,
 				9664B33A1CAA4119008F7E6F /* Assets.xcassets */,
 				9664B3481CAA49C7008F7E6F /* Utilities */,
+				9664B3691CAAC343008F7E6F /* Categories */,
 				9664B32E1CAA4119008F7E6F /* Supporting Files */,
 			);
 			path = JXOne;
@@ -159,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				9664B35C1CAA64EB008F7E6F /* Constants.h */,
+				9664B36D1CAADA7D008F7E6F /* BaseFunction.h */,
+				9664B36E1CAADA7D008F7E6F /* BaseFunction.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -185,6 +194,15 @@
 				9664B3671CAA780E008F7E6F /* CircularLoaderView.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9664B3691CAAC343008F7E6F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9664B36A1CAAC354008F7E6F /* UIView+Extension.h */,
+				9664B36B1CAAC354008F7E6F /* UIView+Extension.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		B2835FCBB818591AFB478895 /* Pods */ = {
@@ -318,6 +336,8 @@
 			files = (
 				9664B3581CAA4ED7008F7E6F /* ThingEntity.m in Sources */,
 				9664B35B1CAA507D008F7E6F /* BaseViewController.m in Sources */,
+				9664B36F1CAADA7D008F7E6F /* BaseFunction.m in Sources */,
+				9664B36C1CAAC354008F7E6F /* UIView+Extension.m in Sources */,
 				9664B3681CAA780E008F7E6F /* CircularLoaderView.m in Sources */,
 				9664B3651CAA76E0008F7E6F /* CustomImageView.m in Sources */,
 				9664B3361CAA4119008F7E6F /* ViewController.m in Sources */,
