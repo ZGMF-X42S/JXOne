@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+//Test Code
+#import "BaseViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UITabBarController *rootTabBarController = [[UITabBarController alloc] init];
+    
+    BaseViewController *baseViewController = [[BaseViewController alloc] init];
+    //UINavigationController *baseNavigationController = [[UINavigationController alloc] initWithRootViewController:baseViewController];
+    UINavigationController *baseNavigationController = [[UINavigationController alloc] init];
+    [baseNavigationController setViewControllers:@[baseViewController]];
+    [rootTabBarController addChildViewController:baseNavigationController];
+    
+    self.window.rootViewController = rootTabBarController;
+    [self.window makeKeyAndVisible];
+    //rootTabBarController.viewControllers = @[]
+    
+    
     return YES;
 }
 
