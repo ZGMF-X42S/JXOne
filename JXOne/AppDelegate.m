@@ -10,6 +10,7 @@
 
 //Test Code
 #import "BaseViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,10 +26,17 @@
     UITabBarController *rootTabBarController = [[UITabBarController alloc] init];
     
     BaseViewController *baseViewController = [[BaseViewController alloc] init];
+    
     //UINavigationController *baseNavigationController = [[UINavigationController alloc] initWithRootViewController:baseViewController];
     UINavigationController *baseNavigationController = [[UINavigationController alloc] init];
     [baseNavigationController setViewControllers:@[baseViewController]];
-    [rootTabBarController addChildViewController:baseNavigationController];
+    // 首页
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    UINavigationController *homeNavigationController = [[UINavigationController alloc] init];
+    [homeNavigationController setViewControllers:@[homeViewController]];
+    
+    //[rootTabBarController addChildViewController:baseNavigationController];
+    rootTabBarController.viewControllers = @[baseNavigationController, homeNavigationController];
     
     self.window.rootViewController = rootTabBarController;
     [self.window makeKeyAndVisible];

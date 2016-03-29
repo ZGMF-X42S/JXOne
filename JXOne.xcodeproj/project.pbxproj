@@ -18,6 +18,9 @@
 		9664B3581CAA4ED7008F7E6F /* ThingEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3541CAA4ED7008F7E6F /* ThingEntity.m */; };
 		9664B35B1CAA507D008F7E6F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B35A1CAA507D008F7E6F /* BaseViewController.m */; };
 		9664B35F1CAA6715008F7E6F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B35E1CAA6715008F7E6F /* HomeViewController.m */; };
+		9664B3621CAA742D008F7E6F /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3611CAA742D008F7E6F /* HomeView.m */; };
+		9664B3651CAA76E0008F7E6F /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3641CAA76E0008F7E6F /* CustomImageView.m */; };
+		9664B3681CAA780E008F7E6F /* CircularLoaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9664B3671CAA780E008F7E6F /* CircularLoaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		9664B35C1CAA64EB008F7E6F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		9664B35D1CAA6715008F7E6F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9664B35E1CAA6715008F7E6F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9664B3601CAA742D008F7E6F /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		9664B3611CAA742D008F7E6F /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		9664B3631CAA76E0008F7E6F /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		9664B3641CAA76E0008F7E6F /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		9664B3661CAA780E008F7E6F /* CircularLoaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLoaderView.h; sourceTree = "<group>"; };
+		9664B3671CAA780E008F7E6F /* CircularLoaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLoaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +177,12 @@
 		9664B34A1CAA49C7008F7E6F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9664B3601CAA742D008F7E6F /* HomeView.h */,
+				9664B3611CAA742D008F7E6F /* HomeView.m */,
+				9664B3631CAA76E0008F7E6F /* CustomImageView.h */,
+				9664B3641CAA76E0008F7E6F /* CustomImageView.m */,
+				9664B3661CAA780E008F7E6F /* CircularLoaderView.h */,
+				9664B3671CAA780E008F7E6F /* CircularLoaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -303,11 +318,14 @@
 			files = (
 				9664B3581CAA4ED7008F7E6F /* ThingEntity.m in Sources */,
 				9664B35B1CAA507D008F7E6F /* BaseViewController.m in Sources */,
+				9664B3681CAA780E008F7E6F /* CircularLoaderView.m in Sources */,
+				9664B3651CAA76E0008F7E6F /* CustomImageView.m in Sources */,
 				9664B3361CAA4119008F7E6F /* ViewController.m in Sources */,
 				9664B3551CAA4ED7008F7E6F /* HomeEntity.m in Sources */,
 				9664B3331CAA4119008F7E6F /* AppDelegate.m in Sources */,
 				9664B35F1CAA6715008F7E6F /* HomeViewController.m in Sources */,
 				9664B3561CAA4ED7008F7E6F /* QuestionEntity.m in Sources */,
+				9664B3621CAA742D008F7E6F /* HomeView.m in Sources */,
 				9664B3301CAA4119008F7E6F /* main.m in Sources */,
 				9664B3571CAA4ED7008F7E6F /* ReadingEntity.m in Sources */,
 			);
