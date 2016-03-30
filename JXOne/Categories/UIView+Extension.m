@@ -1,6 +1,6 @@
 //
 //  UIView+Extension.m
-//  微博2期
+//  
 //
 //  Created by Jason Jia on 3/5/16.
 //  Copyright © 2016 ZGMF-X42S. All rights reserved.

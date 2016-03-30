@@ -46,6 +46,8 @@
 
 - (void)setUpViews {
     self.backgroundColor = BackgroudColor;
+    
+    
     self.scrollView = [UIScrollView new];
     self.scrollView.showsVerticalScrollIndicator = YES;
     self.scrollView.showsHorizontalScrollIndicator = NO;
@@ -77,8 +79,9 @@
     [self.containerView addSubview:self.volLabel];
     
     [self.volLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.top.equalTo(self.containerView.mas_left).with.offset(10);
-        //make.top.equalTo(self.containerView.mas_top).with.offset(10);
+        //make.left.and.top.equalTo(self.containerView.mas_left).with.offset(10);
+        make.left.equalTo(self.containerView.mas_left).with.offset(10);
+        make.top.equalTo(self.containerView.mas_top).with.offset(10);
         make.right.equalTo(self.containerView.mas_right).with.offset(-10);
         make.height.mas_equalTo(@16);
     }];
@@ -105,6 +108,18 @@
     [self.containerView addSubview:self.paintNameLabel];
     [self.paintNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.paintImageView.mas_bottom).with.offset(10);
+        make.left.equalTo(self.containerView.mas_left).with.offset(10);
+        make.right.equalTo(self.containerView.mas_right).with.offset(-10);
+    }];
+    
+    // 初始化画作者
+    self.paintAuthorLabel = [UILabel new];
+    self.paintAuthorLabel.textColor = PaintInfoTextColor;
+    self.paintAuthorLabel.font = systemFont(12);
+    self.paintAuthorLabel.textAlignment = NSTextAlignmentRight;
+    [self.containerView addSubview:self.paintAuthorLabel];
+    [self.paintAuthorLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.paintNameLabel.mas_bottom).with.offset(0);
         make.left.equalTo(self.containerView.mas_left).with.offset(10);
         make.right.equalTo(self.containerView.mas_right).with.offset(-10);
     }];
@@ -173,12 +188,13 @@
                          topCapHeight:2];                       //topCapHeight:上面不拉伸区域
     [self.praiseNumberBtn setBackgroundImage:btnImage forState:UIControlStateNormal];
     [self.praiseNumberBtn setImage:[UIImage imageNamed:@"home_like"] forState:UIControlStateNormal];
-    [self.praiseNumberBtn setImage:[UIImage imageNamed:@"home_like_hl"] forState:UIControlStateNormal];
+    [self.praiseNumberBtn setImage:[UIImage imageNamed:@"home_like_hl"] forState:UIControlStateSelected];
     
     self.praiseNumberBtn.imageEdgeInsets   = UIEdgeInsetsMake(2, 0, 0, 0);
     self.praiseNumberBtn.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
     
     [self.praiseNumberBtn addTarget:self action:@selector(praise) forControlEvents:UIControlEventTouchUpInside];
+    [self.containerView addSubview:self.praiseNumberBtn];
     [self.praiseNumberBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentBGImageView.mas_bottom).with.offset(30);
         make.right.equalTo(self.containerView.mas_right).with.offset(0);

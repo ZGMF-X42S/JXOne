@@ -1,11 +1,12 @@
 //
 //  UIView+Extension.h
-//  微博2期
 //
 //  Created by Jason Jia on 3/5/16.
 //  Copyright © 2016 ZGMF-X42S. All rights reserved.
 //
-
+/**
+ *  快速获取和赋值 UIView的位置相关值
+ */
 #import <UIKit/UIKit.h>
 
 @interface UIView (Extension)
