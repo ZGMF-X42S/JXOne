@@ -27,7 +27,8 @@
 #define FULL_HEIGHT           (SCREEN_HEIGHT - ((SYSTEM_VERSION >= 7) ? 0 : STATUSBAR_HEIGHT))
 #define CONTENT_HEIGHT        (FULL_HEIGHT - NAVBAR_HEIGHT)
 
-
+/* frame 结构体成员快捷赋值的问题 */
+#import "UIView+Extension.h"
 #import "Constants.h"
 #import "BaseFunction.h"
 #endif /* JXOne_pch */
